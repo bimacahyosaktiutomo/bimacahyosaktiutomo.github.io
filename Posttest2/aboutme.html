@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body background="https://www.solidbackgrounds.com/images/1200x600/1200x600-alice-blue-solid-color-background.jpg"></body>
+<nav>
+    <div>
+        <a class="logo" href="index.html">
+            <h6><i data-feather="chevron-left" style="color: aqua;"></i></h6>
+            <h6>BACKSPACE <br> <span style="color: greenyellow;">Computer</span></h6>
+            <img style="width: 13%;" src="backspaceaqua.png" alt="">
+        </a>
+    </div>
+    <div class="aboutme" id="myTopnav"> 
+        <a href="index.html"><i data-feather="home"></i> Beranda</a>
+        <a href="aboutme.html"><i data-feather="users"></i>Tentang Saya</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i data-feather="menu"></i>
+        </a>
+    </div>
+</nav>
+    <section>
+        <div class="row">
+            <div class="column"><img src="dapet kulkas.jpg" alt=""></div>
+            <div class="column2">
+                <ul class="tentangGweh">
+                    <li><h1><i data-feather="cpu"></i> TENTANG SAYA</h1></li>
+                    <br>    
+                    <li><i data-feather="user"></i> NAMA : Bimasakti Cahyo Utomo</li>
+                    <li><i data-feather="hash"></i> NIM : 2209106021</li>
+                    <li><i data-feather="calendar"></i> Tanggal Lahir : Tenggarong, 10 Januari 2004</li>
+                    <li><i data-feather="mail"></i> E-Mail : bimasakticahyoutomo@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div style="display: flex;">
+            <i style="margin-top: 4.8%;color: aqua;" data-feather="chevron-left"></i>
+            <h4 style="color: greenyellow;padding-top: 5%;"> BACKSPACE Computer©</h4>
+        </div>
+        <div id="socmed">
+            <a href=""> <i data-feather="instagram"></i></a>
+            <a href=""> <i data-feather="twitter"></i></a>
+            <a href=""> <i data-feather="facebook"></i></a>
+        </div>
+    </footer>
+    <script>
+        feather.replace();
+    </script>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "aboutme") {
+            x.className += " responsive";
+        } else {
+            x.className = "aboutme";
+        }
+        }
+    </script>
+</body>
+</html>
