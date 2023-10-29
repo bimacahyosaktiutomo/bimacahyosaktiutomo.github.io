@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif, Arial, sans-serif;
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: salmon;
+}
+
+section {
+    width: 100%;
+    height:30%;
+} 
+
+#sec-time {
+    height: auto;
+}
+
+#waktu {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+#waktu h1 {
+    position: fixed;
+    font-size: medium;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+#waktu span {
+    padding: 9px;
+    box-shadow: 1px 2px 8px 0px rgba(0,0,0,0.32);
+    -webkit-box-shadow: 1px 2px 8px 0px rgba(0,0,0,0.32);
+    -moz-box-shadow: 1px 2px 8px 0px rgba(0,0,0,0.32);
+}
+
+#hari {
+    background-color: lightgreen;
+    border-radius: 5px;
+    color: black;
+}
+
+#tanggal-jam {
+    background-color: lightskyblue;
+    border-radius: 5px;
+    color: #064b8b;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#timezone {
+    background-color: steelblue;
+    border-radius: 5px;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#datetanggal {
+    background-color: #f0f8ff;
+}
+
+.container {
+    /* position: fixed; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.tambah-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid #064b8b;
+    background-color: none;
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.tambah-btn:hover {
+    cursor: pointer;
+    color: aliceblue;
+    border: solid lightgreen;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action a{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+}
+
+.edit-delete-button {
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid #f0f8ff;
+    background-color: none;
+    background-color: lightgreen;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.edit-delete-button:hover {
+    cursor: pointer;
+    border: solid lightgreen;
+}
+
+.hapus {
+    background-color: none;
+    background-color: lightcoral;
+}
+
+.hapus:hover {
+    border: solid lightcoral;
+}
+
+.table-wraper {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px 20px 20px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 1px 3px 23px -1px rgba(0,0,0,0.36);
+    -webkit-box-shadow: 1px 3px 23px -1px rgba(0,0,0,0.36);
+    -moz-box-shadow: 1px 3px 23px -1px rgba(0,0,0,0.36);
+    /* margin-top: 8%; */
+}
+
+.table-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #064b8b;
+    padding: 20px;
+    border-radius: 5px 5px 0px 0px ;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+}
+
+.table-head {
+    margin-top: 10px;
+    width: 100%;
+}
+
+td {
+    text-align: center;
+}
+
+#logout-label {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
+.btn-logout {
+    margin-top: 5%;
+    border:solid salmon;
+    border-radius: 5px;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    padding: 0 15px;
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.btn-logout:hover {
+    color: white;
+    /* box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2); */
+    border: solid salmon;
+    background-color: salmon;
+    cursor: pointer;
+}

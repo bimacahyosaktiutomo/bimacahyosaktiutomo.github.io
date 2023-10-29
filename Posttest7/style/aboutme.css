@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+#material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    transition: 1s;
+    background-color: var(--body-background);
+    --body-background: #FFFFFF;
+    --primary-color:#064b8b;
+}
+
+.dark {
+    --body-background: black;
+    --primary-color: #262626;
+}
+
+nav{
+    transition: 1s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0.5vw 0.5vw 0.5vw 0;
+}
+
+.top-nav{
+    flex-basis: 20%;
+}
+    .logo a{
+        display: flex;
+        align-items: center;
+        margin-left: 10%;
+        font-size: 2.5vh;
+    }.logo img{
+        width: 15%;
+        height: auto;
+    }.logo h6{
+        width: fit-content;
+        color: #ff7f50;
+        margin: 0;
+    }.logo h6:hover{
+        padding: 5px;
+        border-radius: 5px; 
+        transition: 0.3s;
+    }
+
+.login-btn {
+    color: #adff2f;
+    border: solid #adff2f;
+    background-color: transparent;
+    border-radius: 4px;
+    height: 34px;
+	width: fit-content;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    padding: 0 15px;
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    border: solid coral;
+    background-color: coral;
+    color: white;
+    box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+}
+
+#aboutme a{
+    color: #adff2f;
+    font-weight: bold;
+    font-size: 2.5vh;
+    text-decoration: none;
+    padding: 0 1vw 0;
+}
+#aboutme a:hover{
+    transition: 0.3s;
+    color: coral;
+    font-weight: bold;
+}#aboutme .icon{
+    display: none;
+}
+
+#aboutme h3 {
+    color: #adff2f;
+    transition: 0.3s;
+}
+
+#aboutme h3:hover {
+    color: #ff7f50;
+}
+
+#burgerbar{
+    display: none;
+}
+#aboutme{
+    display: flex;
+    margin-right: 2%;
+    align-items: center;
+}
+
+#btn-mode{
+    display: block;
+    width: 36px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}#btn-mode:hover{
+    transition: 0.5s;
+    filter: invert(61%) sepia(76%) saturate(1073%) hue-rotate(322deg) brightness(97%) contrast(114%);
+} 
+#moon{
+    display: none;
+}
+
+.row {
+    display: flex;
+    margin-inline: 96px;
+}
+
+.column {
+    flex: 50%;
+    display: flex;
+    justify-content: end;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}.column img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 46px 1px rgba(0,0,0,0.36);
+    -webkit-box-shadow: 0px 10px 46px 1px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 10px 46px 1px rgba(0,0,0,0.36);
+}.column2 {
+    flex: 50%;
+    justify-content: start;
+    margin-top: 15%;
+    margin-left: 1%;
+}.column2 ul li{
+    list-style-type: none;
+}
+
+.tentangGweh{
+    background-color: white;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 46px 1px rgba(0,0,0,0.36);
+    -webkit-box-shadow: 0px 10px 46px 1px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 10px 46px 1px rgba(0,0,0,0.36);
+    margin: 10vh;
+}
+
+footer{
+    background-color: var(--primary-color);
+}
+
+#footer-logo{
+    display: flex;
+    justify-content: center;
+    /* background-color: var(--primary-color); */
+    align-items: center;
+} 
+#footer-logo h4{
+    font-size: 2vw;
+    color: #adff2f;
+    text-align: center;
+    width: fit-content;
+}
+
+#socmed {
+    display: flex;
+    justify-content: center;
+    /* background-color: var(--primary-color); */
+}
+#socmed a{
+    color: #ff7f50;
+    padding: 2%;
+}
