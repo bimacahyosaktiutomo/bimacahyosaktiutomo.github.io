@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 24, 2023 at 05:09 PM
+-- Generation Time: Oct 30, 2023 at 11:57 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -39,7 +39,12 @@ CREATE TABLE `laptop` (
 --
 
 INSERT INTO `laptop` (`id`, `nama`, `deskripsi`, `gambar`) VALUES
-(1, 'Lenovo Ideapad Gaming 3 (Lama)', 'Spek Dewa', '2023-10-24_11-09-13_Lenovo Ideapad Gaming 3 (Lama).png');
+(1, 'Lenovo Ideapad Gaming 3 (Lama)', 'Spek Dewa', '2023-10-24_11-09-13_Lenovo Ideapad Gaming 3 (Lama).png'),
+(2, 'HP Victus', 'asdadasd', '2023-10-29_08-47-56_HP Victus.png'),
+(3, 'ASUS TUF', 'Blue Arciv', '2023-10-29_08-48-13_ASUS TUF.png'),
+(5, 'bla', 'test', '2023-10-29_10-08-55_bla.png'),
+(6, 'plcaholder7', 'adadssd', '2023-10-29_10-09-09_plcaholder7.png'),
+(7, 'placeholder 8', 'asddasdasd', '2023-10-29_10-10-23_placeholder 8.png');
 
 -- --------------------------------------------------------
 
@@ -52,7 +57,7 @@ CREATE TABLE `user` (
   `fullname` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `akses` varchar(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -61,7 +66,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `fullname`, `username`, `email`, `password`, `akses`) VALUES
-(1, 'admin', 'admin', 'admin@gmail.com', 'admin', 'admin');
+(1, 'admin', 'admin', 'admin@gmail.com', '$2y$10$Tz5XnCuXY0CuDyd/T9dzFOZmscapfrNrkkHg37F74g.i3YKcOr/L2', 'admin'),
+(2, 'bima', 'bima', 'bima@gmail.com', '$2y$10$siesbVei4sDAk1GFGOyDqeRcPQVs8iOgvWCNZL2OQlo/hzMtZjhWy', ''),
+(3, 'reja', 'reja', 'reja@gmail.com', '$2y$10$Dxaj/jFoGpiABceRMqoCn./FbI1UyP6wbJFOnq00PuQy1di8td57C', '');
 
 --
 -- Indexes for dumped tables
@@ -87,13 +94,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `laptop`
 --
 ALTER TABLE `laptop`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
