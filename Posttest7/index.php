@@ -63,7 +63,8 @@
     <section id="landing">
         <div id="landing-image"></div>
         <div id="landing-title">
-            <h1>Backspace Computer</h1>
+            <h1>Selamat Datang di Website Resmi Backspace Computer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eaque aperiam quasi doloribus quos ut dolores corporis dolore voluptatem ad, tempora, alias excepturi voluptates harum. Harum suscipit excepturi nihil! Rerum.</p>
         </div>
     </section>
     <section id="review">

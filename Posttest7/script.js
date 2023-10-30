@@ -58,3 +58,9 @@ function confirmDelete(id) {
         window.location.href = "../include/inc_delete.php?id=" + id;
     }
 }
+
+function confirmDeleteUSR(id) {
+    if (confirm("Konfirmasi Penghapusan User")) {
+        window.location.href = "../include/inc_deleteUSR.php?id=" + id;
+    }
+}

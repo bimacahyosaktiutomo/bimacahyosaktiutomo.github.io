@@ -73,7 +73,7 @@
                 </form>
             </div>
         </div>
-        <a href="../index.php"><button class="btn btn-back" id="btn-kembali">Kembali</button></a>
+        <a href="../pages/login.php"><button class="btn btn-back" id="btn-kembali">Kembali</button></a>
     </section>
 </body>
 </html>
